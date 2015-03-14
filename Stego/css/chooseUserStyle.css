@@ -1,0 +1,227 @@
+
+/* This stylesheet is used for the marketing layouts. This portion of the site will be the initial views on the site. */
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700italic);   
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * *   ChooseUser Page     * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#myMapContainerId{    
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px); 
+}
+
+#mainHeader {
+    font-family: 'Oswald', sans-serif;
+}
+
+.intro-container {
+    padding-top: 10%;
+    height: 100%;
+    width:100%;
+    background-color: rgba(184,37,36,.8);   
+}
+
+.intro-header {
+    text-align: center;
+    /*background: url(../images/TopFrameRibbon_cutout.png) no-repeat center;*/
+    min-height: 400px;
+}
+
+.intro-info {
+    margin-top: 7%;
+}
+
+.intro-message {
+    position: relative;
+}
+
+.intro-message > h1 {
+    margin: 15;
+    font-size: 8em;
+    color: rgb(255,255,255);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.intro-message > h2 {
+    margin: 15;
+    font-size: 4em;
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-divider {
+    width: 50%;
+    border-top: 1px solid #f8f8f8;
+    color: rgb(255,255,255);
+
+}
+
+.intro-button{
+    background-color: white;
+    color: rgb(184,37,36);
+    border: 1px solid white;
+    width: 125px;
+}
+
+.intro-button:hover{
+    background-color: rgb(184,37,36);;
+    color: white;
+}
+
+
+/* tablet (iPad) in landscape */
+@media(max-width:1024px) and (max-height: 768px) {
+
+    .intro-header {
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 15%;
+    }
+
+    .intro-container {
+        padding-top: 0%;
+    }
+
+    .intro-message > h1 {
+        font-size: 6em;
+    }
+
+    .intro-message > h2 
+    {
+        font-size: 3em;
+    }
+
+    .intro-button {
+        margin-bottom:10px;
+    }    
+}
+
+
+/* tablet (iPad) in portrait */
+@media(max-width:769px) and (max-height:1024px) {
+
+    .intro-header {
+        height: 100%;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 25%;
+    }
+
+    .intro-container {
+        padding-top: 0%;
+    }
+
+    .intro-message > h1 {
+        font-size: 6em;
+    }
+
+    .intro-message > h2 
+    {
+        font-size: 3em;
+    }
+
+    .intro-button {
+        margin-bottom:10px;
+    }
+}
+
+/* smartphone from Iphone 6+ */
+@media (max-width:414px) and ( max-height: 736px){
+
+    .intro-header {
+        height: 100%;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 40%;
+    }
+
+    .intro-container {
+        padding-top: 0%;
+    }
+
+    .intro-message > h1 {
+        font-size: 4em;
+    }
+
+    .intro-message > h2 
+    {
+        font-size: 2em;
+    }
+
+    .intro-button {
+        margin-bottom:5px;
+    }   
+}
+
+
+/* smartphone from Iphone 6 and below  portrait*/
+@media (max-width:375px) and ( max-height: 667px){
+
+    .intro-header {
+        height: 100%;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 40%;
+    }
+
+    .intro-container {
+        padding-top: 0%;
+    }
+
+    .intro-message > h1 {
+        font-size: 4em;
+    }
+
+    .intro-message > h2 
+    {
+        font-size: 2em;
+    }
+
+    .intro-button {
+        margin-bottom:5px;
+    }   
+}
+
+
+
+@media ( max-width: 320px) and (max-height: 480 ){
+
+    .intro-header {
+        height: 100%;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 25%;
+    }
+
+    .intro-container {
+        padding-top: 0%;
+    }
+
+    .intro-message > h1 {
+        font-size: 4em;
+    }
+
+    .intro-message > h2 
+    {
+        font-size: 2em;
+    }
+
+    .intro-button {
+        margin-bottom:5px;
+    } 
+}

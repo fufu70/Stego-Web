@@ -1,0 +1,493 @@
+2014/08/29 05:45:45 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (63)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (99)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/08/29 05:45:45 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (63)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (99)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/08/29 05:45:45 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (63)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (99)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/08/29 05:45:45 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (63)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (99)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/08/29 05:45:45 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (63)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (99)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/08/29 05:45:56 [error] [php] Cannot modify header information - headers already sent by (output started at /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Teacher.php:159) (/Users/imicklisch/Documents/Economic Simulator/src/framework/web/CHttpRequest.php:803)
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/TeacherController.php(76): TeacherController->redirect()
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/actions/CInlineAction.php(49): TeacherController->actionCreateEconomy()
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(286): TeacherController->runAction()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(265): TeacherController->runActionWithFilters()
+#5 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): TeacherController->run()
+#6 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/teacher/create-economy
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/TeacherController.php (76)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/15 03:56:28 [error] [exception.CException] exception 'CException' with message 'Property "Rule.rule_value" is not defined.' in /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CComponent.php:130
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(145): CComponent->__get('rule_value')
+#1 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Rule.php(29): CActiveRecord->__get('rule_value')
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1052): Rule->afterFind()
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveFinder.php(769): CActiveRecord->afterFindInternal()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveFinder.php(69): CJoinElement->afterFind()
+#5 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), false)
+#6 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#7 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Rule.php(364): CActiveRecord->find(Array)
+#8 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Rule.php(171): Rule::findRule('economyHasRules', 'economy_id=:eco...', Array, 'Economy Time Di...', NULL)
+#9 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Economy.php(588): Rule::findEconomyRule('2', 'Economy Time Di...')
+#10 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/components/DateUtility.php(28): Economy::getEconomyTimeDifference('2')
+#11 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/EntityHasMessage.php(53): DateUtility::getCurrentDate('2')
+#12 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Entity.php(231): EntityHasMessage::createEntityHasMessage('1', '4', '3')
+#13 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Entity.php(593): Entity::createEntityHasMessage('3', '4', 'Start Nominatio...', Array)
+#14 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Accessor.php(68): Entity->sendMessage('4', 'Start Nominatio...', Array)
+#15 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/AccessorController.php(167): Accessor->startNomination()
+#16 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/actions/CInlineAction.php(49): AccessorController->actionStartNomination()
+#17 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('startNomination')
+#21 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('accessor/startN...')
+#22 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php/accessor/start-nomination
+HTTP_REFERER=http://localhost/index.php/teacher/election-settings
+---
+2014/09/15 03:58:57 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/15 03:58:57 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/15 03:58:57 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/15 03:58:57 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/15 03:58:57 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/15 21:06:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/Applications/MAMP/tmp/mysql/mysql.sock' (2)' in /Users/imicklisch/Documents/Economic Simulator/src/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1484): CActiveRecord->getTableAlias(true)
+#7 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/TeacherController.php(44): CActiveRecord->findByPk('2')
+#8 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(306): TeacherController->beforeAction(Object(CInlineAction))
+#9 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('')
+#12 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('teacher')
+#13 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/teacher
+---
+2014/09/19 19:27:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'economy_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`rule_id` AS `t0_c0`, `t`.`rule_type_id` AS `t0_c1`, `t`.`rule_name` AS `t0_c2`, `t`.`rule_value` AS `t0_c3`, `t`.`rule_attribute` AS `t0_c4`, `t`.`rule_activated` AS `t0_c5`, `entityTypeHasDefaultRules`.`entity_type_has_default_rule_id` AS `t1_c0`, `entityTypeHasDefaultRules`.`entity_type_id` AS `t1_c1`, `entityTypeHasDefaultRules`.`rule_id` AS `t1_c2`, `entityType`.`entity_type_id` AS `t2_c0`, `entityType`.`entity_type` AS `t2_c1`, `entityType`.`entity_type_description` AS `t2_c2` FROM `tbl_rule` `t`  LEFT OUTER JOIN `tbl_entity_type_has_default_rule` `entityTypeHasDefaultRules` ON (`entityTypeHasDefaultRules`.`rule_id`=`t`.`rule_id`)  LEFT OUTER JOIN `tbl_entity_type` `entityType` ON (`entityTypeHasDefaultRules`.`entity_type_id`=`entityType`.`entity_type_id`)  WHERE (economy_id=:economyID&& entity_type=:entityType).
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Rule.php (163)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Entity.php (69)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Entity.php (54)
+2014/09/19 19:27:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'economy_id' in 'where clause'. The SQL statement executed was: SELECT `t`.`rule_id` AS `t0_c0`, `t`.`rule_type_id` AS `t0_c1`, `t`.`rule_name` AS `t0_c2`, `t`.`rule_value` AS `t0_c3`, `t`.`rule_attribute` AS `t0_c4`, `t`.`rule_activated` AS `t0_c5`, `entityTypeHasDefaultRules`.`entity_type_has_default_rule_id` AS `t1_c0`, `entityTypeHasDefaultRules`.`entity_type_id` AS `t1_c1`, `entityTypeHasDefaultRules`.`rule_id` AS `t1_c2`, `entityType`.`entity_type_id` AS `t2_c0`, `entityType`.`entity_type` AS `t2_c1`, `entityType`.`entity_type_description` AS `t2_c2` FROM `tbl_rule` `t`  LEFT OUTER JOIN `tbl_entity_type_has_default_rule` `entityTypeHasDefaultRules` ON (`entityTypeHasDefaultRules`.`rule_id`=`t`.`rule_id`)  LEFT OUTER JOIN `tbl_entity_type` `entityType` ON (`entityTypeHasDefaultRules`.`entity_type_id`=`entityType`.`entity_type_id`)  WHERE (economy_id=:economyID&& entity_type=:entityType)' in /Users/imicklisch/Documents/Economic Simulator/src/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /Users/imicklisch/Documents/Economic Simulator/src/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Rule.php(163): CActiveRecord->findAll(Array)
+#7 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Entity.php(69): Rule::getEntityTypeRules(1, 'Accessor')
+#8 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/Entity.php(54): Entity::copyEntityRules('3', 1, 'Accessor')
+#9 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/models/DoorKeeper.php(108): Entity::createEntity('Christian Mickl...', 'Accessor')
+#10 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php(95): DoorKeeper->signup()
+#11 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/actions/CInlineAction.php(49): DoorKeeperController->actionSignup()
+#12 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('signup')
+#16 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('doorkeeper/sign...')
+#17 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/doorkeeper/signup
+HTTP_REFERER=http://localhost/index.php/doorkeeper
+---
+2014/09/19 19:29:14 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:29:14 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:29:14 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:29:14 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:29:14 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:33:38 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:33:38 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:33:38 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:33:38 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:33:38 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 19:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testBenefitCurve".' in /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php:483
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(270): CController->missingAction('testBenefitCurv...')
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('testBenefitCurv...')
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('teacher/testBen...')
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/teacher/test-benefit-curve
+---
+2014/09/19 19:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testBenefitFunction".' in /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php:483
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(270): CController->missingAction('testBenefitFunc...')
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('testBenefitFunc...')
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('teacher/testBen...')
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/teacher/test-benefit-function
+---
+2014/09/19 20:09:54 [error] [exception.CException] exception 'CException' with message 'TeacherController cannot find the requested view "/economy-list".' in /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php:878
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(782): CController->renderPartial('/economy-list', Array, true)
+#1 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/TeacherController.php(91): CController->render('/economy-list', Array)
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/actions/CInlineAction.php(49): TeacherController->actionCreateEconomy()
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('createEconomy')
+#7 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('teacher/createE...')
+#8 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/teacher/create-economy
+---
+2014/09/19 20:15:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testBenefitFunction".' in /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php:483
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(270): CController->missingAction('testBenefitFunc...')
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('testBenefitFunc...')
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('teacher/testBen...')
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/teacher/test-benefit-function
+---
+2014/09/19 20:28:26 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:28:26 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:28:26 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:28:26 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:28:26 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:29:29 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:29:29 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:29:29 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:29:29 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 20:29:29 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:00:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testProductionFunction".' in /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php:483
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(270): CController->missingAction('testProductionF...')
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): CController->run('testProductionF...')
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController('teacher/testPro...')
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/teacher/test-production-function
+---
+2014/09/19 21:01:40 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:01:40 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:01:40 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:01:40 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:01:40 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:13:43 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:13:43 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:13:43 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:13:43 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:13:43 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:16:34 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:16:34 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:16:34 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:16:34 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:16:34 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:52:56 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:52:56 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:52:56 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:52:56 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/19 21:52:56 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:42:34 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:42:34 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:42:34 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:42:34 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:42:34 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:45:47 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:45:47 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:45:47 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:45:47 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:45:47 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:46:25 [warning] [application] Failed to set unsafe attribute "userType" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:46:25 [warning] [application] Failed to set unsafe attribute "firstName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:46:25 [warning] [application] Failed to set unsafe attribute "lastName" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:46:25 [warning] [application] Failed to set unsafe attribute "cellPhone" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:46:25 [warning] [application] Failed to set unsafe attribute "passwordRepeat" of "DoorKeeper".
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (62)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/DoorKeeperController.php (97)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2014/09/20 14:55:16 [error] [php] Undefined variable: K (/Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/components/ProductionFunction.php:41)
+Stack trace:
+#0 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(286): TeacherController->runAction()
+#2 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CController.php(265): TeacherController->runActionWithFilters()
+#3 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(282): TeacherController->run()
+#4 /Users/imicklisch/Documents/Economic Simulator/src/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /Users/imicklisch/Documents/Economic Simulator/src/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php(15): CWebApplication->run()
+REQUEST_URI=/index.php/teacher/test-production-function
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/components/ProductionFunction.php (41)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/protected/controllers/TeacherController.php (311)
+in /Users/imicklisch/Documents/Economic Simulator/src/eco-sim/index.php (15)
+2015/03/14 03:22:58 [error] [php] include(AdminController.php): failed to open stream: No such file or directory (/Users/imicklisch/Documents/Stego-Web/framework/YiiBase.php:427)
+Stack trace:
+#0 /Users/imicklisch/Documents/Stego-Web/framework/YiiBase.php(204): spl_autoload_call()
+#1 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(332): createComponent()
+#2 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#3 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/imicklisch/Documents/Stego-Web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /Users/imicklisch/Documents/Stego-Web/Stego/index.php(15): CWebApplication->run()
+REQUEST_URI=/
+in /Users/imicklisch/Documents/Stego-Web/Stego/index.php (15)
+2015/03/14 03:51:46 [error] [php] Undefined variable: form (/Users/imicklisch/Documents/Stego-Web/Stego/protected/views/site/index.php:8)
+Stack trace:
+#0 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/imicklisch/Documents/Stego-Web/Stego/protected/controllers/SiteController.php(21): SiteController->render()
+#3 /Users/imicklisch/Documents/Stego-Web/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/imicklisch/Documents/Stego-Web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/imicklisch/Documents/Stego-Web/Stego/index.php(15): CWebApplication->run()
+REQUEST_URI=/
+in /Users/imicklisch/Documents/Stego-Web/Stego/protected/views/site/index.php (8)
+in /Users/imicklisch/Documents/Stego-Web/Stego/protected/controllers/SiteController.php (21)
+in /Users/imicklisch/Documents/Stego-Web/Stego/index.php (15)
+2015/03/14 03:52:21 [error] [php] Undefined variable: errorMessage (/Users/imicklisch/Documents/Stego-Web/Stego/protected/views/site/index.php:28)
+Stack trace:
+#0 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Users/imicklisch/Documents/Stego-Web/Stego/protected/controllers/SiteController.php(21): SiteController->render()
+#3 /Users/imicklisch/Documents/Stego-Web/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(286): SiteController->runAction()
+#6 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Users/imicklisch/Documents/Stego-Web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /Users/imicklisch/Documents/Stego-Web/Stego/index.php(15): CWebApplication->run()
+REQUEST_URI=/
+in /Users/imicklisch/Documents/Stego-Web/Stego/protected/views/site/index.php (28)
+in /Users/imicklisch/Documents/Stego-Web/Stego/protected/controllers/SiteController.php (21)
+in /Users/imicklisch/Documents/Stego-Web/Stego/index.php (15)
+2015/03/14 04:36:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "doorkeeper/signup".' in /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(141): CWebApplication->runController('doorkeeper/sign...')
+#1 /Users/imicklisch/Documents/Stego-Web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /Users/imicklisch/Documents/Stego-Web/Stego/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/doorkeeper/signup
+HTTP_REFERER=http://localhost/
+---
+2015/03/14 16:18:38 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "/site/_userImages".' in /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php:878
+Stack trace:
+#0 /Users/imicklisch/Documents/Stego-Web/Stego/protected/views/site/index.php(7): CController->renderPartial('/site/_userImag...')
+#1 /Users/imicklisch/Documents/Stego-Web/framework/web/CBaseController.php(126): require('/Users/imicklis...')
+#2 /Users/imicklisch/Documents/Stego-Web/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Users/imicklis...', NULL, true)
+#3 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(869): CBaseController->renderFile('/Users/imicklis...', NULL, true)
+#4 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(782): CController->renderPartial('/site/index', NULL, true)
+#5 /Users/imicklisch/Documents/Stego-Web/Stego/protected/controllers/SiteController.php(20): CController->render('/site/index')
+#6 /Users/imicklisch/Documents/Stego-Web/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /Users/imicklisch/Documents/Stego-Web/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(282): CController->run('')
+#11 /Users/imicklisch/Documents/Stego-Web/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#12 /Users/imicklisch/Documents/Stego-Web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /Users/imicklisch/Documents/Stego-Web/Stego/index.php(15): CApplication->run()
+#14 {main}
+REQUEST_URI=/
+---
