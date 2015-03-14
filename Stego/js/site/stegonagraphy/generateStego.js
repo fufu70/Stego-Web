@@ -190,8 +190,19 @@ function hideInColorMap(colorMap, myHeader, text)
             context.fillRect( i, j, 1, 1 );
         }
     }
-    var dataURL = canvas.toDataURL();
-    document.getElementById('canvasImgEncode').src = dataURL;
+
+    var Images = Parse.Object.extend("Images");
+    var image = new Images;
+    image.set("user_id");
+    image.set("Image", new Parse.File("testing.png", { "base64": canvas.toDataURL("image/png")} ));
+    image.save(null, {
+        success: function(image) {
+            console.log(image);
+        },
+        error: function(image, error) {
+            console.log(error);
+        }
+    });
 }
 
 function transformDataToBaseN(base, fileData)

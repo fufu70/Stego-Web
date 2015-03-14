@@ -9,7 +9,6 @@
 <script type="text/javascript">
     $('.navbar').hide();
     $('.userImages').hide();
-    // $('.login').hide();
 
 
     function createUser(emailAddress, password)
@@ -63,7 +62,7 @@
         query.include("user_id");
         query.find({
             success: function(results) {
-                console.log(results);
+                displayUserImages(results);
             },
             error: function(error) {
                 alert("Error: " + error.code + " " + error.message);

@@ -53,8 +53,8 @@
 	?>
 
 	<body>
-		<!-- <div id="businessContent" class="doorkeeper animated slideInDown"> -->
+		<div id="businessContent" class="">
 			<?php echo $content; ?>
-		<!-- </div> -->
+		</div>
 	</body>	
 </html>
