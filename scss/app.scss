@@ -1,0 +1,83 @@
+@import "settings";
+@import "foundation";
+@import "font-awesome/stylesheets/font-awesome";
+@import "parallax/parallax";
+@import "loader/loader";
+
+body {
+	transition: all 0.5s ease-in-out;
+}
+
+.reveal-modal-bg {
+	position: fixed;
+}
+
+.reveal-modal {
+    position : fixed;
+    overflow : scroll;
+}
+
+.reveal-modal.full{
+    top:0px !important;
+}
+
+.reveal-modal h2 {
+	color: $primary-background-color;
+	text-align: center;
+}
+
+button, .button {
+	background-color: $primary-background-color;
+	transition: all 0.5s ease-in-out;
+}
+
+button:hover, button:focus, button:active, .button:hover, .button:focus, .button:active {
+	background-color: lighten($primary-background-color, 10%);
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+.image-description {
+	color: lighten($primary-background-color, 10%);
+	text-align: center;
+	font-size: 5rem;
+}
+
+.description {
+	min-height: 120px;
+	text-align: center;
+}
+
+.options {
+	margin-top: 50px;
+}
+
+.options img {
+	max-width: 100%;
+	min-width: 25%;
+	margin: 20px 0px;
+}
+
+.center-inside-container {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.btn-action.close-reveal-modal {
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: inherit;
+    position: relative;
+    top: inherit;
+    right: inherit;
+}
+
+.large-4.medium-6.small-12.text-area {
+	margin-left: auto;
+	margin-right: auto;
+}

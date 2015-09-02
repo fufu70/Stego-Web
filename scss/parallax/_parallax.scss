@@ -1,0 +1,82 @@
+@import "variables";
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  font-weight: 200;
+  font-size: 20px;
+  background: $primary-background-color;
+}
+
+.parallax-background {  
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease 0.5s;
+  z-index:0;
+}
+
+.parallax-background:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    // background: $background_image center center no-repeat;
+    opacity: 0;
+}
+
+.hover-background:before {
+    opacity: 0.15;
+    // background: $background_image center center no-repeat;
+    transition: all 0.5s ease 0.5s;
+}
+
+.intro-text {
+
+  position: relative; 
+  z-index: 2;
+  font-size: $font-size-heading;
+  color: $white;
+  text-align: center;
+  padding-top: 7%;
+  opacity: 1;
+}
+
+.icon-wrap {
+  position: relative; 
+  z-index: 2;
+  text-align: center;
+  opacity: 1;
+}
+
+.app-icon {
+  color: $white;
+  display: inline-block;
+  font-size: $font-size-icon;
+  margin: 40px;
+  transition: all 0.15s ease 0s;
+
+  &.windows:active, &.windows:hover {
+    color: $windows-color;
+  }
+
+  &.apple:active, &.apple:hover {
+    color: $apple-color;
+  }
+
+  &.android:active, &.android:hover {
+    color: $android-color;
+  }
+}
+
+.parallax-content {
+  max-width: 100%;
+  position: relative;
+  top: calc(100% - 50px);
+  padding: 50px;
+  font-size: 20px;
+  background-color: #fff;
+}
+

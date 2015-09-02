@@ -1,5 +1,0 @@
-/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
-body
-{
-    overflow-x: auto;
-}
