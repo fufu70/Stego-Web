@@ -125,7 +125,8 @@ var Stego = (function() {
 					
 					if(b > 16)
 					{
-						console.log("too large");
+        				document.getElementById('loading').style.display = "none";
+						$('#tooSmall').foundation('reveal', 'open')
 						return;
 					}
 							

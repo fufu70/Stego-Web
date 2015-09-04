@@ -1,6 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stego</title>
@@ -19,6 +38,7 @@
     <script src="js/stegonagraphy/Header/FileExtension.js"></script>
     <script src="js/stegonagraphy/Header/Header.js"></script>
     <script src="js/FileSaver.js"></script>
+    <script src="js/typed.js"></script>
     <!--<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>-->
   </head>
   <body id="body">
@@ -52,37 +72,37 @@
         </div>
       </div>
       <div class="row">
-        <div class="large-4 medium-6 small-12 columns">
+        <div class="large-4 medium-6 small-12 columns" style="display:none">
           <div class="large-12 medium-12 small-12 columns image-description">
             <i class="fa fa-gear"></i>
           </div>
           <div class="large-12 medium-12 small-12 columns description">
-            <p>Generate an image from a current file or message to send to your friends.</p>
+            <p>Generate an image from a current file or message to encode later on.</p>
           </div>
           <div class="large-12 medium-12 small-12 center-inside-container text-center">
             <button class="large-12 medium-12 small-12 btn-action generate" data-reveal-id="generateModal">Generate</button>
           </div>
         </div>
-        <div class="large-4 medium-6 small-12 columns">
+        <div class="large-6 medium-6 small-12 columns">
           <div class="large-12 medium-12 small-12 columns image-description">
             <i class="fa fa-th-large"></i>
           </div>
           <div class="large-12 medium-12 small-12 columns description">
-            <p>Encode a message or a certain data file inside of current image.</p>
+            <p>Encode a message or a certain data file inside of current image to send to your friends.</p>
           </div>
           <div class="large-12 medium-12 small-12 center-inside-container text-center">
             <button class="large-12 medium-12 small-12 btn-action encode" data-reveal-id="encodeModal">Encode</button>
           </div>
         </div>
-        <div class="large-4 medium-12 small-12 columns">
+        <div class="large-6 medium-6 small-12 columns">
           <div class="large-12 medium-12 small-12 columns image-description">
             <i class="fa fa-eye"></i>
           </div>
-          <div class="large-12 medium-12 small-12 columns description center-inside-container text-center">
-            <p class="large-12 medium-6 small-12 columns decode-description">Decode an image file. The file will automatically be downloaded.</p>
+          <div class="large-12 medium-12 small-12 columns description">
+            <p>Decode an image. The file will automatically be downloaded.</p>
           </div>
           <div class="large-12 medium-12 small-12 center-inside-container text-center">
-            <button class="large-12 medium-6 small-12 btn-action decode" data-reveal-id="decodeModal">Decode</button>
+            <button class="large-12 medium-12 small-12 btn-action decode" data-reveal-id="decodeModal">Decode</button>
           </div>
         </div>
       </div>
@@ -93,11 +113,17 @@
       <h2 id="modalTitle"><i class="fa fa-cog"></i> Generate Image </h2>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 
+      <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
+        <h3 class="option-header"></h3>
+      </div>
+
       <div class="options select">
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-message">Message</button>
         </div>
-
+        <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
+          <p>Or</p>
+        </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-file">File</button>
         </div>
@@ -135,9 +161,17 @@
       <h2 id="modalTitle"><i class="fa fa-th-large"></i> Encode Image </h2>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 
+
+      <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
+        <h3 class="option-header"></h3>
+      </div>
+
       <div class="options select">
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-message">Message</button>
+        </div>
+        <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
+          <p>Or</p>
         </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-file">File</button>
@@ -149,7 +183,7 @@
           <textarea class="large-4 medium-6 small-12 text-area"></textarea>
         </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
-          <label class="button large-4 medium-6 small-12 btn-action btn-image">Select Image <input type="file" class="input-image" style="display:none;"></label>
+          <label class="button large-4 medium-6 small-12 btn-action btn-image"><span>Select Image</span> <input type="file" class="input-image" style="display:none;"></label>
         </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-submit">Encode</button>
@@ -158,10 +192,10 @@
 
       <div class="options file" style="display:none;">
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
-          <label class="button large-4 medium-6 small-12 btn-action btn-file">Select File <input type="file" class="input-file" style="display:none;"></label>
+          <label class="button large-4 medium-6 small-12 btn-action btn-file"><span>Select File</span> <input type="file" class="input-file" style="display:none;"></label>
         </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
-          <label class="button large-4 medium-6 small-12 btn-action btn-image">Select Image <input type="file" class="input-image" style="display:none;"></label>
+          <label class="button large-4 medium-6 small-12 btn-action btn-image"><span>Select Image</span> <input type="file" class="input-image" style="display:none;"></label>
         </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-submit">Encode</button>
@@ -172,6 +206,13 @@
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <img id="encodeCanvasImage">
         </div>
+
+        <div class="large-12 medium-12 small-12 colums center-inside-container text-center">
+          <a href="javascript:Index.download()" class="button large-4 medium-6 small-12 btn-action btn-download">
+            Download
+          </a>
+        </div>
+        
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action close-reveal-modal">Close</button>
         </div>
@@ -181,10 +222,15 @@
     <div id="decodeModal" class="reveal-modal full" data-reveal aria-labelledby="Not Available" aria-hidden="true" role="dialog">
       <h2 id="modalTitle"><i class="fa fa-eye"></i> Decode Image </h2>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      
+
+      <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
+        <h3 class="option-header"></h3>
+      </div>
 
       <div class="options select">
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
-          <label class="button large-4 medium-6 small-12 btn-action btn-file">Select File <input type="file" class="input-file" style="display:none;"></label>
+          <label class="button large-4 medium-6 small-12 btn-action btn-file"><span>Select Image</span> <input type="file" class="input-file" style="display:none;"></label>
         </div>
         <div class="large-12 medium-12 small-12 columns center-inside-container text-center">
           <button class="large-4 medium-6 small-12 btn-action btn-submit">Decode</button>
@@ -204,10 +250,16 @@
     </div>
 
 
-    <div id="myModal" class="reveal-modal small" data-reveal aria-labelledby="Not Available" aria-hidden="true" role="dialog">
+    <div id="myModal" class="reveal-modal full" data-reveal aria-labelledby="Not Available" aria-hidden="true" role="dialog">
       <h2 id="modalTitle">Coming Soon! <i class="fa fa-smile-o"></i></h2>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
+
+    <div id="tooSmall" class="reveal-modal full" data-reveal aria-labelledby="Not Available" aria-hidden="true" role="dialog">
+      <h2 id="modalTitle">Image is too small<i class="fa fa-frown-o"></i> Please select a larger Image</h2>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
     <div id="loading" style="display:none">
       <div class="sk-cube-grid">
         <div class="sk-cube sk-cube1"></div>

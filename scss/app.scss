@@ -3,6 +3,7 @@
 @import "font-awesome/stylesheets/font-awesome";
 @import "parallax/parallax";
 @import "loader/loader";
+@import "cursor";
 
 body {
 	transition: all 0.5s ease-in-out;
@@ -46,7 +47,7 @@ p {
 }
 
 .description {
-	min-height: 120px;
+	min-height: 140px;
 	text-align: center;
 }
 
@@ -80,4 +81,13 @@ p {
 .large-4.medium-6.small-12.text-area {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.option-header {
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+.text-area {
+	border: 3px solid $primary-background-color;
 }
