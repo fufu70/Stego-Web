@@ -1,0 +1,48 @@
+.team-section {
+
+	text-align: center;
+	background-color: $primary-background-color;
+	width: 100%;
+
+	.team-title {
+
+		margin: 20px 0px;
+
+		h1 {
+			color: $white;
+		}
+
+		img {
+			width: 20%;
+			margin-top: -25px;
+		}
+	}
+
+	.team-member {
+		margin: 20px 0px;
+		
+		.columns {
+			background-color: white;
+		}
+	}
+
+	.member-links {
+		text-align: center;
+		font-size: 2rem;
+		padding-bottom: 10px;
+
+		a {
+			color: lighten($primary-background-color, 0%);
+			margin: 0.4rem;
+			transition: all 0.5s ease-in-out;
+		}
+
+		a:hover, a:active {
+			color: lighten($primary-background-color, 10%);
+		}
+	}
+
+	.member-title {
+		text-align: center;
+	}
+}

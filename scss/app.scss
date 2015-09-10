@@ -4,6 +4,7 @@
 @import "parallax/parallax";
 @import "loader/loader";
 @import "cursor";
+@import "team";
 
 body {
 	transition: all 0.5s ease-in-out;
@@ -44,6 +45,12 @@ p {
 	color: lighten($primary-background-color, 10%);
 	text-align: center;
 	font-size: 5rem;
+
+	img {
+		height: 190px;
+		width: 190px;
+		margin: 2rem;
+	}
 }
 
 .description {
@@ -53,12 +60,12 @@ p {
 
 .options {
 	margin-top: 50px;
-}
 
-.options img {
-	max-width: 100%;
-	min-width: 25%;
-	margin: 20px 0px;
+	img {
+		max-width: 100%;
+		min-width: 25%;
+		margin: 20px 0px;
+	}
 }
 
 .center-inside-container {
